@@ -82,7 +82,7 @@ const ViewStory = ({ storyId, closeModal }) => {
 
     const handleShare = async (storyId) => {
         try {
-            await navigator.clipboard.writeText(`https://swiptory-backend-pez8.onrender.com/shared/${storyId}`);
+            await navigator.clipboard.writeText(`https://swiptory-frontend-flame.vercel.app/shared/${storyId}`);
             toast.success("Link copied to clipboard")
         } catch (error) {
             console.error('Error In Sharing Story', error);
