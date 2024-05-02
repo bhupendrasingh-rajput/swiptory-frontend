@@ -1,0 +1,186 @@
+.slide {
+    position: relative;
+    height: 100%;
+    aspect-ratio: 2/3;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 20px 0px #FFFFFF40;
+}
+
+.navBtn {
+    cursor: pointer;
+    font-size: 8vh;
+    color: white;
+}
+
+.storyImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.customContent {
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(360deg, #000000 59.6%, rgba(0, 0, 0, 0) 102.31%);
+    border-radius: 0 0 1rem 1rem;
+    bottom: 0;
+    padding: 3vh 1vw;
+    color: white;
+
+    h2 {
+        font-size: 2.5vh;
+    }
+
+    p {
+        margin-top: 1vh;
+        font-size: 2vh;
+    }
+}
+
+.bottomBtns {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3vw;
+    font-size: 3.5vh;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        margin-left: 0.4vw;
+        font-size: 2vh;
+    }
+}
+
+
+.upperRow {
+    position: absolute;
+    top: 0;
+    padding: 1vh 1vw;
+    width: 100%;
+    background: linear-gradient(180deg, #000000ca 59.6%, rgba(0, 0, 0, 0) 102.31%);
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+}
+
+.buttonRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3.5vh;
+    color: white;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.progressBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5vw;
+}
+
+.progressBarItem {
+    flex: 1;
+    height: 0.5vh;
+    background-color: #D9D9D980;
+    cursor: pointer;
+}
+
+.progressBarItem.active {
+    background-color: #FFFFFF;
+}
+
+/* .mobileNavBtnRight {
+    border: 5px solid white;
+    
+} */
+
+@media only screen and (max-width: 600px) {
+    .slide {
+        /* border: 1px solid red; */
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .storyImage {
+        border-radius: 0;
+    }
+
+    .customContent {
+        border-radius: 0;
+        padding: 5vh 4vw;
+
+        h2 {
+            font-size: 4vh;
+        }
+
+        p {
+            font-size: 2.5vh;
+        }
+    }
+
+    .bottomBtns {
+        margin-top: 2vh;
+        padding-inline: 8vw;
+        font-size: 4vh;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            margin-left: 2vw;
+            font-size: 2vh;
+        }
+    }
+
+    .upperRow {
+        padding: 4vh 4vw;
+        border-radius: 0;
+        row-gap: 2vh;
+    }
+
+    .buttonRow {
+        font-size: 4vh;
+    }
+
+    .progressBar {
+        column-gap: 2vw;
+    }
+
+    .navBtnBox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobileNavBtn {
+        height: 50%;
+        width: 40%;
+    }
+
+}
+
+  

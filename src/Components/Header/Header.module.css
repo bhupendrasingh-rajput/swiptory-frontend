@@ -1,0 +1,159 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0px 5px 15px 0px #00000026;
+
+    padding-inline: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appLogo {
+    padding-left: 1vw;
+    font-size: 3.5vh;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    column-gap: 1vw;
+
+    button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 12vw;
+        height: 5.5vh;
+        border-radius: 5vh;
+        color: white;
+        background-color: transparent;
+        padding-inline: 1vw;
+        font-size: 2.5vh;
+        font-weight: 500;
+    }
+
+    .registerBtn {
+        background-color: #FF7373;
+    }
+
+    .loginBtn {
+        background-color: #73ABFF;
+    }
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5vw;
+}
+
+.ProfilePic {
+    border-radius: 5rem;
+    height: 7vh;
+}
+
+.bookmark {
+    height: 2vh;
+    margin-right: 0.5vw;
+}
+
+.navigateBtn {
+    width: 10vw;
+    background-color: rgba(255, 115, 115, 1);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.menuBtn {
+    height: 10vh;
+    width: 5vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.menu {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem {
+    height: 50%;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        background-color: rgba(255, 115, 115, 1);
+        height: 6vh;
+        width: 10vw;
+        border: none;
+        outline: none;
+        border-radius: 2rem;
+        font-size: 2vh;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.menuItem:hover {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        padding-inline: 2vw;
+        margin-bottom: 2vh;
+    }
+
+    .appLogo {
+        padding-left: 0;
+    }
+
+    .menuBtn {
+        height: 10vh;
+        width: 10vw;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .menu {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .menuItem {
+        width: 100%;
+        column-gap: 4vw;
+        font-weight: 600;
+        font-size: 3vh;
+
+        button {
+            height: 5vh;
+            width: 25vw;
+        }
+    }
+
+    .navigateBtn {
+        height: 5vh;
+        width: 25vw;
+    }
+}

@@ -1,0 +1,151 @@
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.storyRow {
+    margin-top: 5vh;
+    position: relative;
+    min-height: 25vh;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 22% 22% 22% 22%;
+    row-gap: 5vh;
+}
+
+.postContainer {
+    aspect-ratio: 2/3;
+    cursor: pointer;
+    transition: all ease 1s;
+    position: relative;
+    opacity: 0.95;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+
+    img {
+        object-fit: cover;
+        border-radius: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    div {
+        background: linear-gradient(360deg, #000000 59.6%, rgba(0, 0, 0, 0) 102.31%);
+        border-radius: 0 0 1rem 1rem;
+        text-align: left;
+        position: absolute;
+        padding: 3vh 1vw;
+    }
+
+    span,
+    p {
+        color: white;
+    }
+
+    span {
+        font-size: 3vh;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 2vh;
+        font-weight: 500;
+    }
+
+    button {
+        position: absolute;
+        aspect-ratio: 2/1;
+        bottom: -3%;
+        border: none;
+        outline: none;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.2vw;
+        padding-inline: 1vw;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+.postContainer:hover {
+    scale: 0.98;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContainer {
+        height: 100vh;
+        width: 100vw;
+        padding: 1vh 2vw 2vw 1vh;
+    }
+
+    .displayContainer {
+        height: max-content;
+        margin-top: 5vh;
+
+        h2 {
+            font-size: 4vh;
+        }
+    }
+
+    .storyRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 6vh;
+    }
+
+    .noStories {
+        width: 100%;
+    }
+
+    .collectionBox {
+        padding: 0.5rem;
+    }
+
+    .postContainer {
+        aspect-ratio: 3/4;
+
+        img {
+            border-radius: 0.5rem;
+        }
+
+        div {
+            border-radius: 0 0 0.5rem 0.5rem;
+            padding: 10vh 4vw;
+            min-height: fit-content;
+        }
+
+        span,
+        p {
+            color: white;
+        }
+
+        span {
+            font-size: 4vh;
+        }
+
+        p {
+            font-size: 2.5vh;
+        }
+
+        button {
+            bottom: 1.5vh;
+            height: 6vh;
+            aspect-ratio: 2;
+        }
+    }
+
+    .showMore {
+        width: max-content;
+        padding-inline: 2vw;
+        margin-left: 35%;
+    }
+}
